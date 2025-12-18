@@ -1,34 +1,37 @@
 # RSHR 🔨
 
-RSHR: Hierarchical Visual Representation and State-Space Reasoning for Remote Sensing Visual Question Answering
+**RSHR: Hierarchical Visual Representation and State-Space Reasoning for Remote Sensing Visual Question Answering**
 
-🚀 This repository contains the official implementation of RSHR, a lightweight framework for Remote Sensing Visual Question Answering (RSVQA).
-RSHR addresses two key challenges: the visual domain gap in remote sensing imagery and the inefficiency of Transformer-based long-sequence multimodal reasoning.
+🚀 This repository provides the official implementation of **RSHR**, a lightweight framework for **Remote Sensing Visual Question Answering (RSVQA)**.  
+RSHR addresses two key challenges in RSVQA:  
+(1) the visual domain gap between natural images and remote sensing imagery, and  
+(2) the inefficiency of Transformer-based reasoning over long multimodal sequences.
 
-Overview 📊
-
-RSHR consists of two core components:
-
-HAVRNet 🔨
-Hierarchical visual refinement via synergistic spatial and attention modeling for robust semantic representation.
-
-R4SNet ⚙️
-State Space Model (SSM)-based multimodal reasoning with linear-time complexity and low memory cost.
+---
 
 Notes 🧩
 Upon paper acceptance, the repository will be fully synchronized with the camera-ready version, including detailed instructions, pretrained models, and additional analysis.
 
 
-Usage 🛠️
-git clone https://github.com/xupengfei-dr/RSHR.git
+## Overview 📊
+
+RSHR consists of two core components:
+
+- **HAVRNet** 🔨  
+  A hierarchical visual refinement module that enhances semantic robustness through synergistic spatial and attention modeling.
+
+- **R4SNet** ⚙️  
+  A multimodal reasoning module based on **State Space Models (SSMs)**, enabling linear-complexity long-sequence reasoning with reduced computational cost.
+
+The framework achieves competitive or state-of-the-art performance on **RSVQA-LR**, **RSVQA-HR**, and **FloodNet** with significantly fewer parameters than existing methods.
+
+---
+
+## Usage 🛠️
+
+```bash
+git clone https://github.com/your_username/RSHR.git
 cd RSHR
 pip install -r requirements.txt
 
 
-Datasets 🗺️
-
-RSVQA-LR
-
-RSVQA-HR
-
-FloodNet
