@@ -4,12 +4,12 @@
 
 🚀 This repository provides the official implementation of **RSHR**, a lightweight framework for **Remote Sensing Visual Question Answering (RSVQA)**.  
 RSHR addresses two key challenges in RSVQA:  
-(1) the visual domain gap between natural images and remote sensing imagery, and  
+(1) the visual domain gap between natural images and remote sensing imagery
 (2) the inefficiency of Transformer-based reasoning over long multimodal sequences.
 
 ---
 
-Notes 🧩
+## Notes 🧩
 Upon paper acceptance, the repository will be fully synchronized with the camera-ready version, including detailed instructions, pretrained models, and additional analysis.
 
 
