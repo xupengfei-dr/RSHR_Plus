@@ -23,7 +23,6 @@ RSHR consists of two core components:
 - **R4SNet** ⚙️  
   A multimodal reasoning module based on **State Space Models (SSMs)**, enabling linear-complexity long-sequence reasoning with reduced computational cost.
 
-The framework achieves competitive or state-of-the-art performance on **RSVQA-LR**, **RSVQA-HR**, and **FloodNet** with significantly fewer parameters than existing methods.
 
 ---
 
