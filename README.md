@@ -37,7 +37,7 @@ We propose **RSHR+**, a lightweight end-to-end framework that addresses both cha
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/RSHR-plus.git
+git clone https://github.com/xupengfei-dr/RSHR_Plus.git
 cd RSHR-plus
 
 # Create conda environment
