@@ -22,27 +22,11 @@ We propose **RSHR+**, a lightweight end-to-end framework that addresses both cha
   - **QRTS** (Query-Relevance Token Selection): models question semantics via learnable query prototypes and dynamic Top-k sparse routing to generate soft prompts recalibrating visual tokens.
 - **R4SNet** (Remote Sensing Semantic State Space Network): leverages State Space Models (SSMs) with near-linear complexity, enhanced by a dynamic Element-wise Affine Transformation FFN (EAT-FFN) for efficient multimodal long-range dependency modeling.
 
-**中文：**  
-在遥感视觉问答（RSVQA）任务中，基于自然图像预训练的视觉语言模型面临两大挑战：(1) 自然图像与遥感图像之间的巨大域差异；(2) 高分辨率视觉特征与文本融合带来的长序列推理瓶颈。
-
-我们提出 **RSHR+** 轻量端到端框架，分别针对上述两个问题：
-- **渐进式问题条件视觉表征校准机制**，包含：
-  - **GIBSR**：将局部卷积平移等变性与全局注意力解耦为异构双路径，构建双向软协同机制实现前向互导与反向梯度隔离，推进域对齐。
-  - **QRTS**：通过可学习查询原型对问题语义建模，并进行动态 Top-k 稀疏路由生成软提示，将视觉 token 重校准至任务相关语义方向。
-- **R4SNet（遥感语义状态空间网络）**：利用近线性复杂度的状态空间模型（SSM）建模多模态长程依赖，并结合逐元素仿射变换 FFN（EAT-FFN）进行通道级非线性精化。
-
 ---
 
-## 🏆 Results / 实验结果
-
-| Dataset | Overall Accuracy |
-|---------|-----------------|
-| RSVQA-LR | **88.38%** |
-| FloodNet | **86.52%** |
-| RSVQA-HR | Within **0.2%** of SOTA (using only **42.24%** of SOTA parameters) |
 
 > RSHR+ achieves state-of-the-art performance **without** relying on large-scale remote sensing pre-training.  
-> RSHR+ 无需大规模遥感数据预训练，即可达到 SOTA 级别性能。
+
 
 ---
 
