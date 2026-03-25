@@ -74,7 +74,7 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @article{rshrplus2025,
   title     = {RSHR+: A Lightweight Framework for Remote Sensing Visual Question Answering via Progressive Visual Calibration and State Space Modeling},
-  author    = {Your Name and Co-authors},
+  author    = {Pengfei Xu.},
   journal   = {Under Review},
   year      = {2025}
 }
