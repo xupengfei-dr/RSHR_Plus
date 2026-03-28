@@ -1,0 +1,486 @@
+nohup: ignoring input
+/home/pengfei/miniconda3/envs/py310/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/pengfei/miniconda3/envs/py310/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Some weights of BlipForQuestionAnswering were not initialized from the model checkpoint at /home/pengfei/blip-vqa-capfilt-large and are newly initialized: ['text_encoder.cross_adapter.head_queries', 'text_encoder.cross_adapter.k_proj.weight', 'text_encoder.cross_adapter.ln_kv.bias', 'text_encoder.cross_adapter.ln_kv.weight', 'text_encoder.cross_adapter.ln_q.bias', 'text_encoder.cross_adapter.ln_q.weight', 'text_encoder.cross_adapter.o_proj.weight', 'text_encoder.cross_adapter.q_proj.weight', 'text_encoder.cross_adapter.resid_logit', 'text_encoder.cross_adapter.v_proj.weight', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.0.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.0.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.0.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.0.mona_model.alpha', 'vision_model.encoder.layers.0.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.0.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.0.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.0.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.0.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.0.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.0.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.0.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.0.mona_model.beta', 'vision_model.encoder.layers.0.mona_model.gamma', 'vision_model.encoder.layers.0.mona_model.gammax', 'vision_model.encoder.layers.0.mona_model.norm.bias', 'vision_model.encoder.layers.0.mona_model.norm.weight', 'vision_model.encoder.layers.0.mona_model.project1.bias', 'vision_model.encoder.layers.0.mona_model.project1.weight', 'vision_model.encoder.layers.0.mona_model.project2.bias', 'vision_model.encoder.layers.0.mona_model.project2.weight', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.1.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.1.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.1.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.1.mona_model.alpha', 'vision_model.encoder.layers.1.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.1.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.1.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.1.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.1.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.1.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.1.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.1.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.1.mona_model.beta', 'vision_model.encoder.layers.1.mona_model.gamma', 'vision_model.encoder.layers.1.mona_model.gammax', 'vision_model.encoder.layers.1.mona_model.norm.bias', 'vision_model.encoder.layers.1.mona_model.norm.weight', 'vision_model.encoder.layers.1.mona_model.project1.bias', 'vision_model.encoder.layers.1.mona_model.project1.weight', 'vision_model.encoder.layers.1.mona_model.project2.bias', 'vision_model.encoder.layers.1.mona_model.project2.weight', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.10.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.10.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.10.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.10.mona_model.alpha', 'vision_model.encoder.layers.10.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.10.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.10.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.10.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.10.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.10.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.10.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.10.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.10.mona_model.beta', 'vision_model.encoder.layers.10.mona_model.gamma', 'vision_model.encoder.layers.10.mona_model.gammax', 'vision_model.encoder.layers.10.mona_model.norm.bias', 'vision_model.encoder.layers.10.mona_model.norm.weight', 'vision_model.encoder.layers.10.mona_model.project1.bias', 'vision_model.encoder.layers.10.mona_model.project1.weight', 'vision_model.encoder.layers.10.mona_model.project2.bias', 'vision_model.encoder.layers.10.mona_model.project2.weight', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.11.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.11.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.11.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.11.mona_model.alpha', 'vision_model.encoder.layers.11.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.11.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.11.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.11.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.11.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.11.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.11.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.11.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.11.mona_model.beta', 'vision_model.encoder.layers.11.mona_model.gamma', 'vision_model.encoder.layers.11.mona_model.gammax', 'vision_model.encoder.layers.11.mona_model.norm.bias', 'vision_model.encoder.layers.11.mona_model.norm.weight', 'vision_model.encoder.layers.11.mona_model.project1.bias', 'vision_model.encoder.layers.11.mona_model.project1.weight', 'vision_model.encoder.layers.11.mona_model.project2.bias', 'vision_model.encoder.layers.11.mona_model.project2.weight', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.2.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.2.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.2.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.2.mona_model.alpha', 'vision_model.encoder.layers.2.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.2.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.2.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.2.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.2.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.2.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.2.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.2.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.2.mona_model.beta', 'vision_model.encoder.layers.2.mona_model.gamma', 'vision_model.encoder.layers.2.mona_model.gammax', 'vision_model.encoder.layers.2.mona_model.norm.bias', 'vision_model.encoder.layers.2.mona_model.norm.weight', 'vision_model.encoder.layers.2.mona_model.project1.bias', 'vision_model.encoder.layers.2.mona_model.project1.weight', 'vision_model.encoder.layers.2.mona_model.project2.bias', 'vision_model.encoder.layers.2.mona_model.project2.weight', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.3.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.3.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.3.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.3.mona_model.alpha', 'vision_model.encoder.layers.3.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.3.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.3.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.3.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.3.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.3.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.3.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.3.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.3.mona_model.beta', 'vision_model.encoder.layers.3.mona_model.gamma', 'vision_model.encoder.layers.3.mona_model.gammax', 'vision_model.encoder.layers.3.mona_model.norm.bias', 'vision_model.encoder.layers.3.mona_model.norm.weight', 'vision_model.encoder.layers.3.mona_model.project1.bias', 'vision_model.encoder.layers.3.mona_model.project1.weight', 'vision_model.encoder.layers.3.mona_model.project2.bias', 'vision_model.encoder.layers.3.mona_model.project2.weight', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.4.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.4.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.4.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.4.mona_model.alpha', 'vision_model.encoder.layers.4.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.4.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.4.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.4.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.4.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.4.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.4.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.4.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.4.mona_model.beta', 'vision_model.encoder.layers.4.mona_model.gamma', 'vision_model.encoder.layers.4.mona_model.gammax', 'vision_model.encoder.layers.4.mona_model.norm.bias', 'vision_model.encoder.layers.4.mona_model.norm.weight', 'vision_model.encoder.layers.4.mona_model.project1.bias', 'vision_model.encoder.layers.4.mona_model.project1.weight', 'vision_model.encoder.layers.4.mona_model.project2.bias', 'vision_model.encoder.layers.4.mona_model.project2.weight', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.5.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.5.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.5.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.5.mona_model.alpha', 'vision_model.encoder.layers.5.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.5.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.5.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.5.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.5.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.5.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.5.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.5.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.5.mona_model.beta', 'vision_model.encoder.layers.5.mona_model.gamma', 'vision_model.encoder.layers.5.mona_model.gammax', 'vision_model.encoder.layers.5.mona_model.norm.bias', 'vision_model.encoder.layers.5.mona_model.norm.weight', 'vision_model.encoder.layers.5.mona_model.project1.bias', 'vision_model.encoder.layers.5.mona_model.project1.weight', 'vision_model.encoder.layers.5.mona_model.project2.bias', 'vision_model.encoder.layers.5.mona_model.project2.weight', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.6.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.6.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.6.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.6.mona_model.alpha', 'vision_model.encoder.layers.6.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.6.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.6.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.6.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.6.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.6.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.6.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.6.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.6.mona_model.beta', 'vision_model.encoder.layers.6.mona_model.gamma', 'vision_model.encoder.layers.6.mona_model.gammax', 'vision_model.encoder.layers.6.mona_model.norm.bias', 'vision_model.encoder.layers.6.mona_model.norm.weight', 'vision_model.encoder.layers.6.mona_model.project1.bias', 'vision_model.encoder.layers.6.mona_model.project1.weight', 'vision_model.encoder.layers.6.mona_model.project2.bias', 'vision_model.encoder.layers.6.mona_model.project2.weight', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.7.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.7.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.7.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.7.mona_model.alpha', 'vision_model.encoder.layers.7.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.7.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.7.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.7.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.7.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.7.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.7.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.7.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.7.mona_model.beta', 'vision_model.encoder.layers.7.mona_model.gamma', 'vision_model.encoder.layers.7.mona_model.gammax', 'vision_model.encoder.layers.7.mona_model.norm.bias', 'vision_model.encoder.layers.7.mona_model.norm.weight', 'vision_model.encoder.layers.7.mona_model.project1.bias', 'vision_model.encoder.layers.7.mona_model.project1.weight', 'vision_model.encoder.layers.7.mona_model.project2.bias', 'vision_model.encoder.layers.7.mona_model.project2.weight', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.8.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.8.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.8.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.8.mona_model.alpha', 'vision_model.encoder.layers.8.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.8.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.8.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.8.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.8.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.8.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.8.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.8.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.8.mona_model.beta', 'vision_model.encoder.layers.8.mona_model.gamma', 'vision_model.encoder.layers.8.mona_model.gammax', 'vision_model.encoder.layers.8.mona_model.norm.bias', 'vision_model.encoder.layers.8.mona_model.norm.weight', 'vision_model.encoder.layers.8.mona_model.project1.bias', 'vision_model.encoder.layers.8.mona_model.project1.weight', 'vision_model.encoder.layers.8.mona_model.project2.bias', 'vision_model.encoder.layers.8.mona_model.project2.weight', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv1.bias', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv1.weight', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv2.bias', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv2.weight', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv3.bias', 'vision_model.encoder.layers.9.mona_model.adapter_conv.conv3.weight', 'vision_model.encoder.layers.9.mona_model.adapter_conv.projector.bias', 'vision_model.encoder.layers.9.mona_model.adapter_conv.projector.weight', 'vision_model.encoder.layers.9.mona_model.alpha', 'vision_model.encoder.layers.9.mona_model.attn_flash_.k_proj.weight', 'vision_model.encoder.layers.9.mona_model.attn_flash_.o_proj.weight', 'vision_model.encoder.layers.9.mona_model.attn_flash_.q_proj.weight', 'vision_model.encoder.layers.9.mona_model.attn_flash_.v_proj.weight', 'vision_model.encoder.layers.9.mona_model.attn_project_in.bias', 'vision_model.encoder.layers.9.mona_model.attn_project_in.weight', 'vision_model.encoder.layers.9.mona_model.attn_project_out.bias', 'vision_model.encoder.layers.9.mona_model.attn_project_out.weight', 'vision_model.encoder.layers.9.mona_model.beta', 'vision_model.encoder.layers.9.mona_model.gamma', 'vision_model.encoder.layers.9.mona_model.gammax', 'vision_model.encoder.layers.9.mona_model.norm.bias', 'vision_model.encoder.layers.9.mona_model.norm.weight', 'vision_model.encoder.layers.9.mona_model.project1.bias', 'vision_model.encoder.layers.9.mona_model.project1.weight', 'vision_model.encoder.layers.9.mona_model.project2.bias', 'vision_model.encoder.layers.9.mona_model.project2.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+vision_model.embeddings.class_embedding
+vision_model.embeddings.position_embedding
+vision_model.embeddings.patch_embedding.weight
+vision_model.embeddings.patch_embedding.bias
+vision_model.encoder.layers.0.self_attn.qkv.weight
+vision_model.encoder.layers.0.self_attn.qkv.bias
+vision_model.encoder.layers.0.self_attn.projection.weight
+vision_model.encoder.layers.0.self_attn.projection.bias
+vision_model.encoder.layers.0.layer_norm1.weight
+vision_model.encoder.layers.0.layer_norm1.bias
+vision_model.encoder.layers.0.mlp.fc1.weight
+vision_model.encoder.layers.0.mlp.fc1.bias
+vision_model.encoder.layers.0.mlp.fc2.weight
+vision_model.encoder.layers.0.mlp.fc2.bias
+vision_model.encoder.layers.0.layer_norm2.weight
+vision_model.encoder.layers.0.layer_norm2.bias
+vision_model.encoder.layers.1.self_attn.qkv.weight
+vision_model.encoder.layers.1.self_attn.qkv.bias
+vision_model.encoder.layers.1.self_attn.projection.weight
+vision_model.encoder.layers.1.self_attn.projection.bias
+vision_model.encoder.layers.1.layer_norm1.weight
+vision_model.encoder.layers.1.layer_norm1.bias
+vision_model.encoder.layers.1.mlp.fc1.weight
+vision_model.encoder.layers.1.mlp.fc1.bias
+vision_model.encoder.layers.1.mlp.fc2.weight
+vision_model.encoder.layers.1.mlp.fc2.bias
+vision_model.encoder.layers.1.layer_norm2.weight
+vision_model.encoder.layers.1.layer_norm2.bias
+vision_model.encoder.layers.2.self_attn.qkv.weight
+vision_model.encoder.layers.2.self_attn.qkv.bias
+vision_model.encoder.layers.2.self_attn.projection.weight
+vision_model.encoder.layers.2.self_attn.projection.bias
+vision_model.encoder.layers.2.layer_norm1.weight
+vision_model.encoder.layers.2.layer_norm1.bias
+vision_model.encoder.layers.2.mlp.fc1.weight
+vision_model.encoder.layers.2.mlp.fc1.bias
+vision_model.encoder.layers.2.mlp.fc2.weight
+vision_model.encoder.layers.2.mlp.fc2.bias
+vision_model.encoder.layers.2.layer_norm2.weight
+vision_model.encoder.layers.2.layer_norm2.bias
+vision_model.encoder.layers.3.self_attn.qkv.weight
+vision_model.encoder.layers.3.self_attn.qkv.bias
+vision_model.encoder.layers.3.self_attn.projection.weight
+vision_model.encoder.layers.3.self_attn.projection.bias
+vision_model.encoder.layers.3.layer_norm1.weight
+vision_model.encoder.layers.3.layer_norm1.bias
+vision_model.encoder.layers.3.mlp.fc1.weight
+vision_model.encoder.layers.3.mlp.fc1.bias
+vision_model.encoder.layers.3.mlp.fc2.weight
+vision_model.encoder.layers.3.mlp.fc2.bias
+vision_model.encoder.layers.3.layer_norm2.weight
+vision_model.encoder.layers.3.layer_norm2.bias
+vision_model.encoder.layers.4.self_attn.qkv.weight
+vision_model.encoder.layers.4.self_attn.qkv.bias
+vision_model.encoder.layers.4.self_attn.projection.weight
+vision_model.encoder.layers.4.self_attn.projection.bias
+vision_model.encoder.layers.4.layer_norm1.weight
+vision_model.encoder.layers.4.layer_norm1.bias
+vision_model.encoder.layers.4.mlp.fc1.weight
+vision_model.encoder.layers.4.mlp.fc1.bias
+vision_model.encoder.layers.4.mlp.fc2.weight
+vision_model.encoder.layers.4.mlp.fc2.bias
+vision_model.encoder.layers.4.layer_norm2.weight
+vision_model.encoder.layers.4.layer_norm2.bias
+vision_model.encoder.layers.5.self_attn.qkv.weight
+vision_model.encoder.layers.5.self_attn.qkv.bias
+vision_model.encoder.layers.5.self_attn.projection.weight
+vision_model.encoder.layers.5.self_attn.projection.bias
+vision_model.encoder.layers.5.layer_norm1.weight
+vision_model.encoder.layers.5.layer_norm1.bias
+vision_model.encoder.layers.5.mlp.fc1.weight
+vision_model.encoder.layers.5.mlp.fc1.bias
+vision_model.encoder.layers.5.mlp.fc2.weight
+vision_model.encoder.layers.5.mlp.fc2.bias
+vision_model.encoder.layers.5.layer_norm2.weight
+vision_model.encoder.layers.5.layer_norm2.bias
+vision_model.encoder.layers.6.self_attn.qkv.weight
+vision_model.encoder.layers.6.self_attn.qkv.bias
+vision_model.encoder.layers.6.self_attn.projection.weight
+vision_model.encoder.layers.6.self_attn.projection.bias
+vision_model.encoder.layers.6.layer_norm1.weight
+vision_model.encoder.layers.6.layer_norm1.bias
+vision_model.encoder.layers.6.mlp.fc1.weight
+vision_model.encoder.layers.6.mlp.fc1.bias
+vision_model.encoder.layers.6.mlp.fc2.weight
+vision_model.encoder.layers.6.mlp.fc2.bias
+vision_model.encoder.layers.6.layer_norm2.weight
+vision_model.encoder.layers.6.layer_norm2.bias
+vision_model.encoder.layers.7.self_attn.qkv.weight
+vision_model.encoder.layers.7.self_attn.qkv.bias
+vision_model.encoder.layers.7.self_attn.projection.weight
+vision_model.encoder.layers.7.self_attn.projection.bias
+vision_model.encoder.layers.7.layer_norm1.weight
+vision_model.encoder.layers.7.layer_norm1.bias
+vision_model.encoder.layers.7.mlp.fc1.weight
+vision_model.encoder.layers.7.mlp.fc1.bias
+vision_model.encoder.layers.7.mlp.fc2.weight
+vision_model.encoder.layers.7.mlp.fc2.bias
+vision_model.encoder.layers.7.layer_norm2.weight
+vision_model.encoder.layers.7.layer_norm2.bias
+vision_model.encoder.layers.8.self_attn.qkv.weight
+vision_model.encoder.layers.8.self_attn.qkv.bias
+vision_model.encoder.layers.8.self_attn.projection.weight
+vision_model.encoder.layers.8.self_attn.projection.bias
+vision_model.encoder.layers.8.layer_norm1.weight
+vision_model.encoder.layers.8.layer_norm1.bias
+vision_model.encoder.layers.8.mlp.fc1.weight
+vision_model.encoder.layers.8.mlp.fc1.bias
+vision_model.encoder.layers.8.mlp.fc2.weight
+vision_model.encoder.layers.8.mlp.fc2.bias
+vision_model.encoder.layers.8.layer_norm2.weight
+vision_model.encoder.layers.8.layer_norm2.bias
+vision_model.encoder.layers.9.self_attn.qkv.weight
+vision_model.encoder.layers.9.self_attn.qkv.bias
+vision_model.encoder.layers.9.self_attn.projection.weight
+vision_model.encoder.layers.9.self_attn.projection.bias
+vision_model.encoder.layers.9.layer_norm1.weight
+vision_model.encoder.layers.9.layer_norm1.bias
+vision_model.encoder.layers.9.mlp.fc1.weight
+vision_model.encoder.layers.9.mlp.fc1.bias
+vision_model.encoder.layers.9.mlp.fc2.weight
+vision_model.encoder.layers.9.mlp.fc2.bias
+vision_model.encoder.layers.9.layer_norm2.weight
+vision_model.encoder.layers.9.layer_norm2.bias
+vision_model.encoder.layers.10.self_attn.qkv.weight
+vision_model.encoder.layers.10.self_attn.qkv.bias
+vision_model.encoder.layers.10.self_attn.projection.weight
+vision_model.encoder.layers.10.self_attn.projection.bias
+vision_model.encoder.layers.10.layer_norm1.weight
+vision_model.encoder.layers.10.layer_norm1.bias
+vision_model.encoder.layers.10.mlp.fc1.weight
+vision_model.encoder.layers.10.mlp.fc1.bias
+vision_model.encoder.layers.10.mlp.fc2.weight
+vision_model.encoder.layers.10.mlp.fc2.bias
+vision_model.encoder.layers.10.layer_norm2.weight
+vision_model.encoder.layers.10.layer_norm2.bias
+vision_model.encoder.layers.11.self_attn.qkv.weight
+vision_model.encoder.layers.11.self_attn.qkv.bias
+vision_model.encoder.layers.11.self_attn.projection.weight
+vision_model.encoder.layers.11.self_attn.projection.bias
+vision_model.encoder.layers.11.layer_norm1.weight
+vision_model.encoder.layers.11.layer_norm1.bias
+vision_model.encoder.layers.11.mlp.fc1.weight
+vision_model.encoder.layers.11.mlp.fc1.bias
+vision_model.encoder.layers.11.mlp.fc2.weight
+vision_model.encoder.layers.11.mlp.fc2.bias
+vision_model.encoder.layers.11.layer_norm2.weight
+vision_model.encoder.layers.11.layer_norm2.bias
+vision_model.post_layernorm.weight
+vision_model.post_layernorm.bias
+text_decoder.bert.embeddings.word_embeddings.weight
+text_decoder.bert.embeddings.position_embeddings.weight
+text_decoder.bert.embeddings.LayerNorm.weight
+text_decoder.bert.embeddings.LayerNorm.bias
+text_decoder.bert.encoder.layer.0.attention.self.query.weight
+text_decoder.bert.encoder.layer.0.attention.self.query.bias
+text_decoder.bert.encoder.layer.0.attention.self.key.weight
+text_decoder.bert.encoder.layer.0.attention.self.key.bias
+text_decoder.bert.encoder.layer.0.attention.self.value.weight
+text_decoder.bert.encoder.layer.0.attention.self.value.bias
+text_decoder.bert.encoder.layer.0.attention.output.dense.weight
+text_decoder.bert.encoder.layer.0.attention.output.dense.bias
+text_decoder.bert.encoder.layer.0.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.0.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.0.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.0.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.0.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.0.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.0.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.0.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.0.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.0.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.0.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.0.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.0.intermediate.dense.weight
+text_decoder.bert.encoder.layer.0.intermediate.dense.bias
+text_decoder.bert.encoder.layer.0.output.dense.weight
+text_decoder.bert.encoder.layer.0.output.dense.bias
+text_decoder.bert.encoder.layer.0.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.0.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.1.attention.self.query.weight
+text_decoder.bert.encoder.layer.1.attention.self.query.bias
+text_decoder.bert.encoder.layer.1.attention.self.key.weight
+text_decoder.bert.encoder.layer.1.attention.self.key.bias
+text_decoder.bert.encoder.layer.1.attention.self.value.weight
+text_decoder.bert.encoder.layer.1.attention.self.value.bias
+text_decoder.bert.encoder.layer.1.attention.output.dense.weight
+text_decoder.bert.encoder.layer.1.attention.output.dense.bias
+text_decoder.bert.encoder.layer.1.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.1.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.1.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.1.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.1.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.1.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.1.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.1.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.1.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.1.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.1.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.1.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.1.intermediate.dense.weight
+text_decoder.bert.encoder.layer.1.intermediate.dense.bias
+text_decoder.bert.encoder.layer.1.output.dense.weight
+text_decoder.bert.encoder.layer.1.output.dense.bias
+text_decoder.bert.encoder.layer.1.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.1.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.2.attention.self.query.weight
+text_decoder.bert.encoder.layer.2.attention.self.query.bias
+text_decoder.bert.encoder.layer.2.attention.self.key.weight
+text_decoder.bert.encoder.layer.2.attention.self.key.bias
+text_decoder.bert.encoder.layer.2.attention.self.value.weight
+text_decoder.bert.encoder.layer.2.attention.self.value.bias
+text_decoder.bert.encoder.layer.2.attention.output.dense.weight
+text_decoder.bert.encoder.layer.2.attention.output.dense.bias
+text_decoder.bert.encoder.layer.2.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.2.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.2.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.2.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.2.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.2.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.2.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.2.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.2.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.2.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.2.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.2.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.2.intermediate.dense.weight
+text_decoder.bert.encoder.layer.2.intermediate.dense.bias
+text_decoder.bert.encoder.layer.2.output.dense.weight
+text_decoder.bert.encoder.layer.2.output.dense.bias
+text_decoder.bert.encoder.layer.2.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.2.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.3.attention.self.query.weight
+text_decoder.bert.encoder.layer.3.attention.self.query.bias
+text_decoder.bert.encoder.layer.3.attention.self.key.weight
+text_decoder.bert.encoder.layer.3.attention.self.key.bias
+text_decoder.bert.encoder.layer.3.attention.self.value.weight
+text_decoder.bert.encoder.layer.3.attention.self.value.bias
+text_decoder.bert.encoder.layer.3.attention.output.dense.weight
+text_decoder.bert.encoder.layer.3.attention.output.dense.bias
+text_decoder.bert.encoder.layer.3.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.3.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.3.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.3.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.3.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.3.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.3.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.3.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.3.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.3.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.3.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.3.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.3.intermediate.dense.weight
+text_decoder.bert.encoder.layer.3.intermediate.dense.bias
+text_decoder.bert.encoder.layer.3.output.dense.weight
+text_decoder.bert.encoder.layer.3.output.dense.bias
+text_decoder.bert.encoder.layer.3.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.3.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.4.attention.self.query.weight
+text_decoder.bert.encoder.layer.4.attention.self.query.bias
+text_decoder.bert.encoder.layer.4.attention.self.key.weight
+text_decoder.bert.encoder.layer.4.attention.self.key.bias
+text_decoder.bert.encoder.layer.4.attention.self.value.weight
+text_decoder.bert.encoder.layer.4.attention.self.value.bias
+text_decoder.bert.encoder.layer.4.attention.output.dense.weight
+text_decoder.bert.encoder.layer.4.attention.output.dense.bias
+text_decoder.bert.encoder.layer.4.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.4.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.4.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.4.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.4.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.4.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.4.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.4.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.4.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.4.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.4.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.4.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.4.intermediate.dense.weight
+text_decoder.bert.encoder.layer.4.intermediate.dense.bias
+text_decoder.bert.encoder.layer.4.output.dense.weight
+text_decoder.bert.encoder.layer.4.output.dense.bias
+text_decoder.bert.encoder.layer.4.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.4.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.5.attention.self.query.weight
+text_decoder.bert.encoder.layer.5.attention.self.query.bias
+text_decoder.bert.encoder.layer.5.attention.self.key.weight
+text_decoder.bert.encoder.layer.5.attention.self.key.bias
+text_decoder.bert.encoder.layer.5.attention.self.value.weight
+text_decoder.bert.encoder.layer.5.attention.self.value.bias
+text_decoder.bert.encoder.layer.5.attention.output.dense.weight
+text_decoder.bert.encoder.layer.5.attention.output.dense.bias
+text_decoder.bert.encoder.layer.5.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.5.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.5.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.5.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.5.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.5.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.5.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.5.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.5.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.5.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.5.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.5.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.5.intermediate.dense.weight
+text_decoder.bert.encoder.layer.5.intermediate.dense.bias
+text_decoder.bert.encoder.layer.5.output.dense.weight
+text_decoder.bert.encoder.layer.5.output.dense.bias
+text_decoder.bert.encoder.layer.5.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.5.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.6.attention.self.query.weight
+text_decoder.bert.encoder.layer.6.attention.self.query.bias
+text_decoder.bert.encoder.layer.6.attention.self.key.weight
+text_decoder.bert.encoder.layer.6.attention.self.key.bias
+text_decoder.bert.encoder.layer.6.attention.self.value.weight
+text_decoder.bert.encoder.layer.6.attention.self.value.bias
+text_decoder.bert.encoder.layer.6.attention.output.dense.weight
+text_decoder.bert.encoder.layer.6.attention.output.dense.bias
+text_decoder.bert.encoder.layer.6.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.6.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.6.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.6.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.6.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.6.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.6.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.6.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.6.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.6.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.6.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.6.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.6.intermediate.dense.weight
+text_decoder.bert.encoder.layer.6.intermediate.dense.bias
+text_decoder.bert.encoder.layer.6.output.dense.weight
+text_decoder.bert.encoder.layer.6.output.dense.bias
+text_decoder.bert.encoder.layer.6.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.6.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.7.attention.self.query.weight
+text_decoder.bert.encoder.layer.7.attention.self.query.bias
+text_decoder.bert.encoder.layer.7.attention.self.key.weight
+text_decoder.bert.encoder.layer.7.attention.self.key.bias
+text_decoder.bert.encoder.layer.7.attention.self.value.weight
+text_decoder.bert.encoder.layer.7.attention.self.value.bias
+text_decoder.bert.encoder.layer.7.attention.output.dense.weight
+text_decoder.bert.encoder.layer.7.attention.output.dense.bias
+text_decoder.bert.encoder.layer.7.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.7.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.7.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.7.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.7.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.7.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.7.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.7.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.7.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.7.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.7.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.7.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.7.intermediate.dense.weight
+text_decoder.bert.encoder.layer.7.intermediate.dense.bias
+text_decoder.bert.encoder.layer.7.output.dense.weight
+text_decoder.bert.encoder.layer.7.output.dense.bias
+text_decoder.bert.encoder.layer.7.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.7.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.8.attention.self.query.weight
+text_decoder.bert.encoder.layer.8.attention.self.query.bias
+text_decoder.bert.encoder.layer.8.attention.self.key.weight
+text_decoder.bert.encoder.layer.8.attention.self.key.bias
+text_decoder.bert.encoder.layer.8.attention.self.value.weight
+text_decoder.bert.encoder.layer.8.attention.self.value.bias
+text_decoder.bert.encoder.layer.8.attention.output.dense.weight
+text_decoder.bert.encoder.layer.8.attention.output.dense.bias
+text_decoder.bert.encoder.layer.8.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.8.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.8.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.8.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.8.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.8.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.8.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.8.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.8.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.8.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.8.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.8.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.8.intermediate.dense.weight
+text_decoder.bert.encoder.layer.8.intermediate.dense.bias
+text_decoder.bert.encoder.layer.8.output.dense.weight
+text_decoder.bert.encoder.layer.8.output.dense.bias
+text_decoder.bert.encoder.layer.8.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.8.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.9.attention.self.query.weight
+text_decoder.bert.encoder.layer.9.attention.self.query.bias
+text_decoder.bert.encoder.layer.9.attention.self.key.weight
+text_decoder.bert.encoder.layer.9.attention.self.key.bias
+text_decoder.bert.encoder.layer.9.attention.self.value.weight
+text_decoder.bert.encoder.layer.9.attention.self.value.bias
+text_decoder.bert.encoder.layer.9.attention.output.dense.weight
+text_decoder.bert.encoder.layer.9.attention.output.dense.bias
+text_decoder.bert.encoder.layer.9.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.9.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.9.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.9.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.9.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.9.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.9.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.9.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.9.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.9.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.9.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.9.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.9.intermediate.dense.weight
+text_decoder.bert.encoder.layer.9.intermediate.dense.bias
+text_decoder.bert.encoder.layer.9.output.dense.weight
+text_decoder.bert.encoder.layer.9.output.dense.bias
+text_decoder.bert.encoder.layer.9.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.9.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.10.attention.self.query.weight
+text_decoder.bert.encoder.layer.10.attention.self.query.bias
+text_decoder.bert.encoder.layer.10.attention.self.key.weight
+text_decoder.bert.encoder.layer.10.attention.self.key.bias
+text_decoder.bert.encoder.layer.10.attention.self.value.weight
+text_decoder.bert.encoder.layer.10.attention.self.value.bias
+text_decoder.bert.encoder.layer.10.attention.output.dense.weight
+text_decoder.bert.encoder.layer.10.attention.output.dense.bias
+text_decoder.bert.encoder.layer.10.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.10.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.10.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.10.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.10.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.10.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.10.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.10.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.10.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.10.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.10.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.10.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.10.intermediate.dense.weight
+text_decoder.bert.encoder.layer.10.intermediate.dense.bias
+text_decoder.bert.encoder.layer.10.output.dense.weight
+text_decoder.bert.encoder.layer.10.output.dense.bias
+text_decoder.bert.encoder.layer.10.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.10.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.11.attention.self.query.weight
+text_decoder.bert.encoder.layer.11.attention.self.query.bias
+text_decoder.bert.encoder.layer.11.attention.self.key.weight
+text_decoder.bert.encoder.layer.11.attention.self.key.bias
+text_decoder.bert.encoder.layer.11.attention.self.value.weight
+text_decoder.bert.encoder.layer.11.attention.self.value.bias
+text_decoder.bert.encoder.layer.11.attention.output.dense.weight
+text_decoder.bert.encoder.layer.11.attention.output.dense.bias
+text_decoder.bert.encoder.layer.11.attention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.11.attention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.11.crossattention.self.query.weight
+text_decoder.bert.encoder.layer.11.crossattention.self.query.bias
+text_decoder.bert.encoder.layer.11.crossattention.self.key.weight
+text_decoder.bert.encoder.layer.11.crossattention.self.key.bias
+text_decoder.bert.encoder.layer.11.crossattention.self.value.weight
+text_decoder.bert.encoder.layer.11.crossattention.self.value.bias
+text_decoder.bert.encoder.layer.11.crossattention.output.dense.weight
+text_decoder.bert.encoder.layer.11.crossattention.output.dense.bias
+text_decoder.bert.encoder.layer.11.crossattention.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.11.crossattention.output.LayerNorm.bias
+text_decoder.bert.encoder.layer.11.intermediate.dense.weight
+text_decoder.bert.encoder.layer.11.intermediate.dense.bias
+text_decoder.bert.encoder.layer.11.output.dense.weight
+text_decoder.bert.encoder.layer.11.output.dense.bias
+text_decoder.bert.encoder.layer.11.output.LayerNorm.weight
+text_decoder.bert.encoder.layer.11.output.LayerNorm.bias
+text_decoder.cls.predictions.bias
+text_decoder.cls.predictions.transform.dense.weight
+text_decoder.cls.predictions.transform.dense.bias
+text_decoder.cls.predictions.transform.LayerNorm.weight
+text_decoder.cls.predictions.transform.LayerNorm.bias
+text_decoder.cls.predictions.decoder.weight
+Get freq_dic...
+  0%|          | 0/10659 [00:00<?, ?it/s] 31%|███       | 3313/10659 [00:00<00:00, 33121.35it/s] 62%|██████▏   | 6626/10659 [00:00<00:00, 33064.23it/s] 93%|█████████▎| 9933/10659 [00:00<00:00, 33048.08it/s]100%|██████████| 10659/10659 [00:00<00:00, 33018.36it/s]
+Done.
+Loading JSONs...
+Done.
+Construction of the Dataset
+  0%|          | 0/6251 [00:00<?, ?it/s]  1%|          | 43/6251 [00:00<00:14, 429.02it/s]  2%|▏         | 96/6251 [00:00<00:12, 485.12it/s]  2%|▏         | 151/6251 [00:00<00:11, 511.47it/s]  3%|▎         | 205/6251 [00:00<00:11, 520.18it/s]  4%|▍         | 258/6251 [00:00<00:11, 519.66it/s]  5%|▍         | 310/6251 [00:00<00:11, 504.01it/s]  6%|▌         | 368/6251 [00:00<00:11, 526.06it/s]  7%|▋         | 421/6251 [00:00<00:11, 510.74it/s]  8%|▊         | 478/6251 [00:00<00:10, 526.56it/s]  8%|▊         | 531/6251 [00:01<00:11, 506.85it/s]  9%|▉         | 586/6251 [00:01<00:11, 511.79it/s] 10%|█         | 638/6251 [00:01<00:11, 503.46it/s] 11%|█         | 696/6251 [00:01<00:10, 525.26it/s] 12%|█▏        | 751/6251 [00:01<00:10, 529.94it/s] 13%|█▎        | 805/6251 [00:01<00:10, 514.94it/s] 14%|█▎        | 857/6251 [00:01<00:10, 496.37it/s] 15%|█▍        | 907/6251 [00:01<00:10, 486.22it/s] 15%|█▌        | 956/6251 [00:01<00:11, 449.72it/s] 16%|█▌        | 1002/6251 [00:02<00:12, 436.53it/s] 17%|█▋        | 1047/6251 [00:02<00:12, 417.49it/s] 17%|█▋        | 1091/6251 [00:02<00:12, 421.75it/s] 18%|█▊        | 1134/6251 [00:02<00:12, 406.07it/s] 19%|█▉        | 1175/6251 [00:02<00:12, 402.83it/s] 19%|█▉        | 1216/6251 [00:02<00:12, 403.40it/s] 20%|██        | 1257/6251 [00:02<00:12, 403.60it/s] 21%|██        | 1301/6251 [00:02<00:11, 412.66it/s] 22%|██▏       | 1348/6251 [00:02<00:11, 428.07it/s] 22%|██▏       | 1395/6251 [00:02<00:11, 438.63it/s] 23%|██▎       | 1442/6251 [00:03<00:10, 447.08it/s] 24%|██▍       | 1487/6251 [00:03<00:12, 382.85it/s] 24%|██▍       | 1527/6251 [00:03<00:13, 342.22it/s] 25%|██▌       | 1563/6251 [00:03<00:18, 248.44it/s] 25%|██▌       | 1593/6251 [00:03<00:21, 211.75it/s] 26%|██▌       | 1618/6251 [00:04<00:24, 191.47it/s] 26%|██▌       | 1640/6251 [00:04<00:26, 174.36it/s] 27%|██▋       | 1660/6251 [00:04<00:28, 163.87it/s] 27%|██▋       | 1678/6251 [00:04<00:28, 157.69it/s] 27%|██▋       | 1695/6251 [00:04<00:29, 152.66it/s] 27%|██▋       | 1711/6251 [00:04<00:30, 147.99it/s] 28%|██▊       | 1726/6251 [00:04<00:31, 144.43it/s] 28%|██▊       | 1741/6251 [00:04<00:32, 137.84it/s] 28%|██▊       | 1755/6251 [00:05<00:33, 133.15it/s] 28%|██▊       | 1769/6251 [00:05<00:33, 134.37it/s] 29%|██▊       | 1783/6251 [00:05<00:33, 134.94it/s] 29%|██▊       | 1797/6251 [00:05<00:33, 133.10it/s] 29%|██▉       | 1811/6251 [00:05<00:33, 133.38it/s] 29%|██▉       | 1826/6251 [00:05<00:32, 137.08it/s] 29%|██▉       | 1841/6251 [00:05<00:31, 139.59it/s] 30%|██▉       | 1856/6251 [00:05<00:30, 142.08it/s] 30%|██▉       | 1871/6251 [00:05<00:31, 139.17it/s] 30%|███       | 1885/6251 [00:06<00:34, 127.37it/s] 30%|███       | 1899/6251 [00:06<00:33, 129.17it/s] 31%|███       | 1913/6251 [00:06<00:34, 127.02it/s] 31%|███       | 1926/6251 [00:06<00:34, 125.51it/s] 31%|███       | 1939/6251 [00:06<00:34, 124.34it/s] 31%|███       | 1952/6251 [00:06<00:34, 123.79it/s] 31%|███▏      | 1965/6251 [00:06<00:34, 124.83it/s] 32%|███▏      | 1979/6251 [00:06<00:33, 127.65it/s] 32%|███▏      | 1993/6251 [00:06<00:33, 128.40it/s] 32%|███▏      | 2006/6251 [00:06<00:33, 127.94it/s] 32%|███▏      | 2019/6251 [00:07<00:33, 127.32it/s] 33%|███▎      | 2032/6251 [00:07<00:42, 100.33it/s] 33%|███▎      | 2043/6251 [00:07<00:42, 99.21it/s]  33%|███▎      | 2056/6251 [00:07<00:39, 106.94it/s] 33%|███▎      | 2071/6251 [00:07<00:35, 117.65it/s] 33%|███▎      | 2085/6251 [00:07<00:34, 122.00it/s] 34%|███▎      | 2099/6251 [00:07<00:32, 126.76it/s] 34%|███▍      | 2115/6251 [00:07<00:30, 133.89it/s] 34%|███▍      | 2130/6251 [00:08<00:29, 137.46it/s] 34%|███▍      | 2145/6251 [00:08<00:29, 139.14it/s] 35%|███▍      | 2160/6251 [00:08<00:29, 139.60it/s] 35%|███▍      | 2175/6251 [00:08<00:28, 141.43it/s] 35%|███▌      | 2190/6251 [00:08<00:28, 143.29it/s] 35%|███▌      | 2205/6251 [00:08<00:28, 143.64it/s] 36%|███▌      | 2220/6251 [00:08<00:28, 139.92it/s] 36%|███▌      | 2235/6251 [00:08<00:28, 139.05it/s] 36%|███▌      | 2249/6251 [00:08<00:28, 138.85it/s] 36%|███▌      | 2264/6251 [00:08<00:28, 141.44it/s] 36%|███▋      | 2279/6251 [00:09<00:28, 137.50it/s] 37%|███▋      | 2295/6251 [00:09<00:27, 143.31it/s] 37%|███▋      | 2311/6251 [00:09<00:26, 146.84it/s] 37%|███▋      | 2327/6251 [00:09<00:26, 149.61it/s] 37%|███▋      | 2343/6251 [00:09<00:25, 152.23it/s] 38%|███▊      | 2359/6251 [00:09<00:25, 154.38it/s] 38%|███▊      | 2375/6251 [00:09<00:25, 154.38it/s] 38%|███▊      | 2391/6251 [00:09<00:24, 154.96it/s] 39%|███▊      | 2407/6251 [00:10<00:58, 66.26it/s]  39%|███▊      | 2421/6251 [00:10<00:49, 77.06it/s] 39%|███▉      | 2434/6251 [00:10<00:44, 85.37it/s] 39%|███▉      | 2450/6251 [00:10<00:38, 99.41it/s] 39%|███▉      | 2465/6251 [00:10<00:34, 109.64it/s] 40%|███▉      | 2481/6251 [00:10<00:31, 121.26it/s] 40%|███▉      | 2496/6251 [00:10<00:29, 128.14it/s] 40%|████      | 2512/6251 [00:11<00:27, 135.96it/s] 40%|████      | 2527/6251 [00:11<00:26, 139.43it/s] 41%|████      | 2542/6251 [00:11<00:27, 135.68it/s] 41%|████      | 2557/6251 [00:11<00:26, 138.01it/s] 41%|████      | 2572/6251 [00:11<00:26, 138.68it/s] 41%|████▏     | 2587/6251 [00:11<00:26, 136.38it/s] 42%|████▏     | 2602/6251 [00:11<00:26, 138.68it/s] 42%|████▏     | 2617/6251 [00:11<00:25, 141.67it/s] 42%|████▏     | 2632/6251 [00:11<00:25, 143.70it/s] 42%|████▏     | 2648/6251 [00:12<00:24, 146.39it/s] 43%|████▎     | 2664/6251 [00:12<00:24, 148.52it/s] 43%|████▎     | 2679/6251 [00:12<00:24, 147.82it/s] 43%|████▎     | 2694/6251 [00:12<00:24, 146.13it/s] 43%|████▎     | 2709/6251 [00:12<00:24, 146.70it/s] 44%|████▎     | 2724/6251 [00:12<00:24, 145.55it/s] 44%|████▍     | 2739/6251 [00:12<00:24, 144.21it/s] 44%|████▍     | 2754/6251 [00:12<00:25, 138.46it/s] 44%|████▍     | 2768/6251 [00:12<00:26, 132.95it/s] 45%|████▍     | 2783/6251 [00:13<00:25, 135.49it/s] 45%|████▍     | 2797/6251 [00:13<00:25, 136.70it/s] 45%|████▌     | 2813/6251 [00:13<00:24, 140.96it/s] 45%|████▌     | 2828/6251 [00:13<00:24, 142.54it/s] 45%|████▌     | 2843/6251 [00:13<00:23, 142.07it/s] 46%|████▌     | 2858/6251 [00:13<00:24, 140.57it/s] 46%|████▌     | 2873/6251 [00:13<00:23, 142.36it/s] 46%|████▌     | 2888/6251 [00:13<00:37, 89.13it/s]  46%|████▋     | 2906/6251 [00:14<00:31, 107.40it/s] 47%|████▋     | 2920/6251 [00:14<00:29, 112.52it/s] 47%|████▋     | 2934/6251 [00:14<00:51, 64.62it/s]  47%|████▋     | 2945/6251 [00:14<00:51, 64.16it/s] 47%|████▋     | 2955/6251 [00:14<00:48, 68.34it/s] 47%|████▋     | 2964/6251 [00:15<00:46, 71.04it/s] 48%|████▊     | 2973/6251 [00:15<01:20, 40.63it/s] 48%|████▊     | 2980/6251 [00:15<01:15, 43.16it/s] 48%|████▊     | 2987/6251 [00:15<01:13, 44.33it/s] 48%|████▊     | 2993/6251 [00:15<01:13, 44.63it/s] 48%|████▊     | 3005/6251 [00:16<00:54, 59.07it/s] 48%|████▊     | 3013/6251 [00:17<02:31, 21.42it/s] 48%|████▊     | 3019/6251 [00:17<03:13, 16.72it/s] 48%|████▊     | 3024/6251 [00:17<03:02, 17.66it/s] 48%|████▊     | 3028/6251 [00:18<03:07, 17.19it/s] 49%|████▊     | 3037/6251 [00:18<02:58, 18.00it/s] 49%|████▊     | 3046/6251 [00:18<02:22, 22.42it/s] 49%|████▉     | 3052/6251 [00:19<03:14, 16.47it/s] 49%|████▉     | 3069/6251 [00:19<01:45, 30.07it/s] 49%|████▉     | 3076/6251 [00:19<01:59, 26.57it/s] 49%|████▉     | 3082/6251 [00:20<02:31, 20.87it/s] 49%|████▉     | 3086/6251 [00:20<02:46, 18.99it/s] 49%|████▉     | 3094/6251 [00:20<02:04, 25.35it/s] 50%|████▉     | 3107/6251 [00:22<03:16, 16.03it/s] 50%|████▉     | 3111/6251 [00:23<05:06, 10.26it/s] 50%|████▉     | 3115/6251 [00:23<04:29, 11.66it/s] 50%|████▉     | 3122/6251 [00:23<03:48, 13.67it/s] 50%|█████     | 3126/6251 [00:23<03:24, 15.31it/s] 50%|█████     | 3130/6251 [00:23<02:55, 17.78it/s] 50%|█████     | 3136/6251 [00:24<02:20, 22.23it/s] 50%|█████     | 3140/6251 [00:24<02:34, 20.12it/s] 50%|█████     | 3144/6251 [00:24<02:54, 17.81it/s] 50%|█████     | 3147/6251 [00:24<03:19, 15.53it/s] 50%|█████     | 3153/6251 [00:25<02:32, 20.31it/s] 51%|█████     | 3157/6251 [00:25<02:12, 23.35it/s] 51%|█████     | 3161/6251 [00:25<02:10, 23.65it/s] 51%|█████     | 3170/6251 [00:25<01:25, 36.06it/s] 51%|█████     | 3175/6251 [00:25<01:29, 34.55it/s] 51%|█████     | 3180/6251 [00:25<01:40, 30.51it/s] 51%|█████     | 3184/6251 [00:28<08:18,  6.15it/s] 51%|█████     | 3191/6251 [00:28<05:29,  9.29it/s] 51%|█████     | 3198/6251 [00:28<03:50, 13.27it/s] 51%|█████▏    | 3205/6251 [00:28<02:48, 18.05it/s] 51%|█████▏    | 3212/6251 [00:28<02:09, 23.51it/s] 52%|█████▏    | 3222/6251 [00:28<01:30, 33.56it/s] 52%|█████▏    | 3229/6251 [00:29<02:55, 17.21it/s] 52%|█████▏    | 3234/6251 [00:29<03:24, 14.79it/s] 52%|█████▏    | 3240/6251 [00:30<03:10, 15.80it/s] 52%|█████▏    | 3244/6251 [00:30<03:53, 12.86it/s] 52%|█████▏    | 3251/6251 [00:31<03:19, 15.07it/s] 52%|█████▏    | 3258/6251 [00:31<02:57, 16.86it/s] 52%|█████▏    | 3262/6251 [00:31<02:41, 18.46it/s] 52%|█████▏    | 3266/6251 [00:31<02:52, 17.28it/s] 52%|█████▏    | 3272/6251 [00:32<02:20, 21.26it/s] 52%|█████▏    | 3275/6251 [00:32<02:28, 20.08it/s] 52%|█████▏    | 3280/6251 [00:32<02:42, 18.29it/s] 53%|█████▎    | 3285/6251 [00:32<02:11, 22.51it/s] 53%|█████▎    | 3288/6251 [00:32<02:19, 21.20it/s] 53%|█████▎    | 3294/6251 [00:32<01:51, 26.53it/s] 53%|█████▎    | 3298/6251 [00:33<01:52, 26.17it/s] 53%|█████▎    | 3302/6251 [00:33<02:23, 20.62it/s] 53%|█████▎    | 3305/6251 [00:33<02:23, 20.55it/s] 53%|█████▎    | 3310/6251 [00:33<02:03, 23.91it/s] 53%|█████▎    | 3315/6251 [00:33<01:46, 27.69it/s] 53%|█████▎    | 3319/6251 [00:34<02:16, 21.44it/s] 53%|█████▎    | 3324/6251 [00:34<02:29, 19.64it/s] 53%|█████▎    | 3327/6251 [00:34<02:19, 20.92it/s] 53%|█████▎    | 3332/6251 [00:34<01:54, 25.43it/s] 53%|█████▎    | 3337/6251 [00:34<02:04, 23.40it/s] 53%|█████▎    | 3342/6251 [00:34<01:44, 27.95it/s] 54%|█████▎    | 3350/6251 [00:35<01:30, 31.92it/s] 54%|█████▎    | 3354/6251 [00:35<02:45, 17.50it/s] 54%|█████▎    | 3357/6251 [00:36<03:40, 13.15it/s] 54%|█████▍    | 3360/6251 [00:36<04:00, 12.01it/s] 54%|█████▍    | 3369/6251 [00:36<02:27, 19.57it/s] 54%|█████▍    | 3372/6251 [00:36<02:47, 17.14it/s] 54%|█████▍    | 3375/6251 [00:37<03:01, 15.81it/s] 54%|█████▍    | 3383/6251 [00:37<02:23, 19.92it/s] 54%|█████▍    | 3390/6251 [00:37<02:16, 20.98it/s] 54%|█████▍    | 3398/6251 [00:38<01:53, 25.07it/s] 54%|█████▍    | 3402/6251 [00:38<01:54, 24.96it/s] 54%|█████▍    | 3405/6251 [00:38<01:52, 25.20it/s] 55%|█████▍    | 3412/6251 [00:38<01:49, 26.00it/s] 55%|█████▍    | 3419/6251 [00:38<01:25, 33.28it/s] 55%|█████▍    | 3423/6251 [00:38<01:53, 24.88it/s] 55%|█████▍    | 3427/6251 [00:39<01:56, 24.23it/s] 55%|█████▍    | 3434/6251 [00:39<02:08, 21.89it/s] 55%|█████▍    | 3437/6251 [00:39<02:06, 22.21it/s] 55%|█████▌    | 3444/6251 [00:39<01:43, 27.24it/s] 55%|█████▌    | 3453/6251 [00:39<01:13, 37.86it/s] 55%|█████▌    | 3458/6251 [00:40<02:23, 19.45it/s] 55%|█████▌    | 3462/6251 [00:41<03:53, 11.96it/s] 56%|█████▌    | 3470/6251 [00:41<02:48, 16.55it/s] 56%|█████▌    | 3477/6251 [00:41<02:32, 18.24it/s] 56%|█████▌    | 3484/6251 [00:42<02:18, 20.04it/s] 56%|█████▌    | 3492/6251 [00:42<01:57, 23.44it/s] 56%|█████▌    | 3499/6251 [00:42<01:51, 24.70it/s] 56%|█████▌    | 3506/6251 [00:42<02:00, 22.71it/s] 56%|█████▌    | 3514/6251 [00:43<02:01, 22.50it/s] 56%|█████▋    | 3517/6251 [00:43<01:59, 22.88it/s] 56%|█████▋    | 3521/6251 [00:43<02:06, 21.58it/s] 56%|█████▋    | 3528/6251 [00:43<02:01, 22.33it/s] 57%|█████▋    | 3536/6251 [00:44<02:04, 21.78it/s] 57%|█████▋    | 3539/6251 [00:44<02:03, 21.97it/s] 57%|█████▋    | 3543/6251 [00:44<02:25, 18.59it/s] 57%|█████▋    | 3548/6251 [00:44<02:09, 20.90it/s] 57%|█████▋    | 3551/6251 [00:45<02:20, 19.25it/s] 57%|█████▋    | 3558/6251 [00:45<02:14, 19.95it/s] 57%|█████▋    | 3565/6251 [00:45<02:20, 19.17it/s] 57%|█████▋    | 3570/6251 [00:46<02:18, 19.33it/s] 57%|█████▋    | 3572/6251 [00:46<02:53, 15.45it/s] 57%|█████▋    | 3580/6251 [00:46<02:30, 17.78it/s] 57%|█████▋    | 3587/6251 [00:46<02:05, 21.21it/s] 57%|█████▋    | 3594/6251 [00:47<01:50, 24.10it/s] 58%|█████▊    | 3597/6251 [00:47<02:00, 22.04it/s] 58%|█████▊    | 3602/6251 [00:47<01:46, 24.99it/s] 58%|█████▊    | 3605/6251 [00:48<03:30, 12.59it/s] 58%|█████▊    | 3608/6251 [00:48<04:50,  9.11it/s] 58%|█████▊    | 3613/6251 [00:49<03:31, 12.46it/s] 58%|█████▊    | 3616/6251 [00:49<03:25, 12.83it/s] 58%|█████▊    | 3621/6251 [00:49<02:57, 14.78it/s] 58%|█████▊    | 3628/6251 [00:49<02:40, 16.39it/s] 58%|█████▊    | 3631/6251 [00:50<02:42, 16.17it/s] 58%|█████▊    | 3636/6251 [00:50<02:24, 18.04it/s] 58%|█████▊    | 3641/6251 [00:50<02:05, 20.87it/s] 58%|█████▊    | 3644/6251 [00:51<04:35,  9.48it/s] 58%|█████▊    | 3649/6251 [00:51<03:21, 12.94it/s] 58%|█████▊    | 3656/6251 [00:51<02:15, 19.21it/s] 59%|█████▊    | 3668/6251 [00:51<01:20, 31.96it/s] 59%|█████▉    | 3676/6251 [00:51<01:05, 39.42it/s] 59%|█████▉    | 3686/6251 [00:51<00:51, 50.15it/s] 59%|█████▉    | 3697/6251 [00:51<00:41, 61.51it/s] 59%|█████▉    | 3709/6251 [00:52<00:34, 73.30it/s] 60%|█████▉    | 3721/6251 [00:52<00:30, 82.83it/s] 60%|█████▉    | 3733/6251 [00:52<00:29, 86.15it/s] 60%|█████▉    | 3745/6251 [00:52<00:26, 93.58it/s] 60%|██████    | 3756/6251 [00:52<00:25, 96.71it/s] 60%|██████    | 3770/6251 [00:52<00:23, 106.71it/s] 61%|██████    | 3782/6251 [00:52<00:22, 109.64it/s] 61%|██████    | 3796/6251 [00:52<00:21, 115.69it/s] 61%|██████    | 3810/6251 [00:52<00:19, 122.53it/s] 61%|██████    | 3823/6251 [00:53<00:21, 112.09it/s] 61%|██████▏   | 3835/6251 [00:53<00:21, 111.76it/s] 62%|██████▏   | 3847/6251 [00:53<00:21, 109.33it/s] 62%|██████▏   | 3859/6251 [00:53<00:24, 98.99it/s]  62%|██████▏   | 3870/6251 [00:53<00:24, 98.67it/s] 62%|██████▏   | 3881/6251 [00:53<00:23, 99.55it/s] 62%|██████▏   | 3892/6251 [00:53<00:24, 97.81it/s] 62%|██████▏   | 3905/6251 [00:53<00:22, 104.81it/s] 63%|██████▎   | 3918/6251 [00:54<00:21, 111.03it/s] 63%|██████▎   | 3931/6251 [00:54<00:19, 116.20it/s] 63%|██████▎   | 3943/6251 [00:54<00:22, 103.62it/s] 63%|██████▎   | 3954/6251 [00:56<01:58, 19.37it/s]  63%|██████▎   | 3962/6251 [00:56<01:55, 19.85it/s] 63%|██████▎   | 3969/6251 [00:57<02:30, 15.14it/s] 64%|██████▎   | 3974/6251 [01:02<09:15,  4.10it/s] 64%|██████▎   | 3980/6251 [01:02<07:11,  5.26it/s] 64%|██████▎   | 3984/6251 [01:02<06:17,  6.00it/s] 64%|██████▍   | 3988/6251 [01:03<06:00,  6.28it/s] 64%|██████▍   | 3993/6251 [01:03<04:34,  8.22it/s] 64%|██████▍   | 3997/6251 [01:03<04:08,  9.06it/s] 64%|██████▍   | 4000/6251 [01:04<04:10,  9.00it/s] 64%|██████▍   | 4003/6251 [01:04<04:02,  9.29it/s] 64%|██████▍   | 4009/6251 [01:04<02:58, 12.58it/s] 64%|██████▍   | 4012/6251 [01:04<02:42, 13.79it/s] 64%|██████▍   | 4018/6251 [01:04<02:08, 17.39it/s] 64%|██████▍   | 4021/6251 [01:05<02:31, 14.72it/s] 64%|██████▍   | 4025/6251 [01:05<02:25, 15.35it/s] 64%|██████▍   | 4031/6251 [01:05<02:03, 17.97it/s] 65%|██████▍   | 4034/6251 [01:05<02:11, 16.81it/s] 65%|██████▍   | 4040/6251 [01:06<01:43, 21.43it/s] 65%|██████▍   | 4043/6251 [01:06<01:37, 22.66it/s] 65%|██████▍   | 4047/6251 [01:06<01:45, 20.95it/s] 65%|██████▍   | 4052/6251 [01:06<01:25, 25.75it/s] 65%|██████▍   | 4056/6251 [01:06<01:27, 25.09it/s] 65%|██████▍   | 4062/6251 [01:06<01:16, 28.62it/s] 65%|██████▌   | 4068/6251 [01:06<01:02, 34.84it/s] 65%|██████▌   | 4072/6251 [01:07<01:29, 24.38it/s] 65%|██████▌   | 4077/6251 [01:07<02:00, 18.08it/s] 65%|██████▌   | 4084/6251 [01:08<01:57, 18.49it/s] 65%|██████▌   | 4090/6251 [01:08<01:31, 23.52it/s] 65%|██████▌   | 4094/6251 [01:08<01:25, 25.37it/s] 66%|██████▌   | 4099/6251 [01:08<01:48, 19.81it/s] 66%|██████▌   | 4105/6251 [01:08<01:29, 23.95it/s] 66%|██████▌   | 4109/6251 [01:09<01:32, 23.05it/s] 66%|██████▌   | 4113/6251 [01:09<01:40, 21.20it/s] 66%|██████▌   | 4118/6251 [01:09<01:23, 25.65it/s] 66%|██████▌   | 4122/6251 [01:09<01:32, 23.00it/s] 66%|██████▌   | 4127/6251 [01:09<01:16, 27.71it/s] 66%|██████▌   | 4131/6251 [01:09<01:12, 29.28it/s] 66%|██████▌   | 4135/6251 [01:09<01:12, 29.03it/s] 66%|██████▌   | 4140/6251 [01:10<01:02, 33.63it/s] 66%|██████▋   | 4144/6251 [01:10<01:22, 25.62it/s] 66%|██████▋   | 4148/6251 [01:10<01:15, 27.92it/s] 66%|██████▋   | 4152/6251 [01:10<01:38, 21.28it/s] 67%|██████▋   | 4157/6251 [01:11<02:01, 17.18it/s] 67%|██████▋   | 4160/6251 [01:11<01:54, 18.25it/s] 67%|██████▋   | 4165/6251 [01:11<01:59, 17.45it/s] 67%|██████▋   | 4169/6251 [01:11<01:43, 20.19it/s] 67%|██████▋   | 4172/6251 [01:11<02:05, 16.56it/s] 67%|██████▋   | 4179/6251 [01:12<01:39, 20.84it/s] 67%|██████▋   | 4182/6251 [01:12<01:33, 22.02it/s] 67%|██████▋   | 4187/6251 [01:12<01:59, 17.32it/s] 67%|██████▋   | 4194/6251 [01:12<01:38, 20.81it/s] 67%|██████▋   | 4201/6251 [01:13<01:41, 20.22it/s] 67%|██████▋   | 4209/6251 [01:13<01:27, 23.39it/s] 67%|██████▋   | 4212/6251 [01:13<01:24, 24.01it/s] 67%|██████▋   | 4216/6251 [01:13<01:24, 23.94it/s] 68%|██████▊   | 4223/6251 [01:14<01:33, 21.78it/s] 68%|██████▊   | 4231/6251 [01:14<01:12, 27.93it/s] 68%|██████▊   | 4235/6251 [01:14<01:09, 28.95it/s] 68%|██████▊   | 4239/6251 [01:14<01:42, 19.58it/s] 68%|██████▊   | 4244/6251 [01:15<01:25, 23.44it/s] 68%|██████▊   | 4248/6251 [01:15<01:30, 22.23it/s] 68%|██████▊   | 4253/6251 [01:15<01:23, 23.97it/s] 68%|██████▊   | 4257/6251 [01:15<01:15, 26.48it/s] 68%|██████▊   | 4261/6251 [01:15<01:20, 24.70it/s] 68%|██████▊   | 4266/6251 [01:15<01:07, 29.52it/s] 68%|██████▊   | 4270/6251 [01:15<01:10, 28.08it/s] 68%|██████▊   | 4275/6251 [01:16<01:30, 21.74it/s] 68%|██████▊   | 4278/6251 [01:16<01:27, 22.63it/s] 69%|██████▊   | 4282/6251 [01:16<01:34, 20.78it/s] 69%|██████▊   | 4287/6251 [01:16<01:18, 25.07it/s] 69%|██████▊   | 4290/6251 [01:17<01:50, 17.77it/s] 69%|██████▊   | 4297/6251 [01:17<01:44, 18.66it/s] 69%|██████▉   | 4304/6251 [01:17<01:41, 19.13it/s] 69%|██████▉   | 4308/6251 [01:18<01:40, 19.34it/s] 69%|██████▉   | 4311/6251 [01:18<01:54, 16.99it/s] 69%|██████▉   | 4315/6251 [01:18<01:38, 19.62it/s] 69%|██████▉   | 4319/6251 [01:18<01:59, 16.15it/s] 69%|██████▉   | 4333/6251 [01:18<00:57, 33.39it/s] 69%|██████▉   | 4339/6251 [01:19<01:49, 17.40it/s] 70%|██████▉   | 4345/6251 [01:19<01:39, 19.17it/s] 70%|██████▉   | 4349/6251 [01:20<02:53, 10.97it/s] 70%|██████▉   | 4356/6251 [01:21<02:17, 13.83it/s] 70%|██████▉   | 4364/6251 [01:21<01:52, 16.71it/s] 70%|██████▉   | 4371/6251 [01:21<01:36, 19.49it/s] 70%|██████▉   | 4374/6251 [01:22<03:09,  9.90it/s] 70%|███████   | 4377/6251 [01:23<04:11,  7.46it/s] 70%|███████   | 4379/6251 [01:24<05:09,  6.05it/s] 70%|███████   | 4381/6251 [01:24<05:38,  5.53it/s] 70%|███████   | 4382/6251 [01:25<06:12,  5.02it/s] 70%|███████   | 4383/6251 [01:25<06:29,  4.79it/s] 70%|███████   | 4387/6251 [01:25<03:58,  7.81it/s] 70%|███████   | 4394/6251 [01:25<02:54, 10.65it/s] 70%|███████   | 4396/6251 [01:26<03:40,  8.40it/s] 70%|███████   | 4398/6251 [01:27<05:04,  6.08it/s] 70%|███████   | 4399/6251 [01:27<05:18,  5.81it/s] 70%|███████   | 4400/6251 [01:27<06:15,  4.93it/s] 70%|███████   | 4401/6251 [01:27<06:20,  4.86it/s] 70%|███████   | 4405/6251 [01:27<03:34,  8.62it/s] 71%|███████   | 4407/6251 [01:28<03:06,  9.86it/s] 71%|███████   | 4412/6251 [01:28<01:54, 16.05it/s] 71%|███████   | 4415/6251 [01:28<02:20, 13.09it/s] 71%|███████   | 4422/6251 [01:28<01:42, 17.91it/s] 71%|███████   | 4429/6251 [01:29<01:31, 19.92it/s] 71%|███████   | 4439/6251 [01:29<00:57, 31.24it/s] 71%|███████   | 4444/6251 [01:30<02:41, 11.19it/s] 71%|███████   | 4449/6251 [01:30<02:09, 13.92it/s] 71%|███████▏  | 4455/6251 [01:30<01:47, 16.73it/s] 71%|███████▏  | 4459/6251 [01:31<03:02,  9.84it/s] 71%|███████▏  | 4462/6251 [01:32<03:17,  9.07it/s] 71%|███████▏  | 4464/6251 [01:32<03:29,  8.52it/s] 72%|███████▏  | 4472/6251 [01:32<02:01, 14.70it/s] 72%|███████▏  | 4476/6251 [01:33<02:34, 11.51it/s] 72%|███████▏  | 4479/6251 [01:34<03:47,  7.78it/s] 72%|███████▏  | 4481/6251 [01:34<04:56,  5.97it/s] 72%|███████▏  | 4488/6251 [01:34<02:52, 10.21it/s] 72%|███████▏  | 4491/6251 [01:35<02:35, 11.28it/s] 72%|███████▏  | 4498/6251 [01:35<01:59, 14.66it/s] 72%|███████▏  | 4506/6251 [01:35<01:36, 18.07it/s] 72%|███████▏  | 4512/6251 [01:35<01:17, 22.44it/s] 72%|███████▏  | 4516/6251 [01:36<02:55,  9.88it/s] 72%|███████▏  | 4519/6251 [01:37<03:17,  8.79it/s] 72%|███████▏  | 4525/6251 [01:37<02:17, 12.56it/s] 72%|███████▏  | 4529/6251 [01:37<02:27, 11.69it/s] 73%|███████▎  | 4532/6251 [01:38<03:45,  7.62it/s] 73%|███████▎  | 4534/6251 [01:39<05:12,  5.49it/s] 73%|███████▎  | 4536/6251 [01:40<06:02,  4.73it/s] 73%|███████▎  | 4538/6251 [01:41<07:05,  4.03it/s] 73%|███████▎  | 4539/6251 [01:41<07:36,  3.75it/s] 73%|███████▎  | 4542/6251 [01:41<06:17,  4.52it/s] 73%|███████▎  | 4543/6251 [01:42<07:11,  3.95it/s] 73%|███████▎  | 4544/6251 [01:42<08:06,  3.51it/s] 73%|███████▎  | 4545/6251 [01:43<07:57,  3.57it/s] 73%|███████▎  | 4546/6251 [01:43<07:19,  3.88it/s] 73%|███████▎  | 4551/6251 [01:43<03:20,  8.50it/s] 73%|███████▎  | 4555/6251 [01:43<02:16, 12.41it/s] 73%|███████▎  | 4562/6251 [01:43<01:40, 16.86it/s] 73%|███████▎  | 4569/6251 [01:43<01:14, 22.64it/s] 73%|███████▎  | 4573/6251 [01:44<01:07, 25.01it/s] 73%|███████▎  | 4579/6251 [01:44<01:02, 26.62it/s] 73%|███████▎  | 4583/6251 [01:44<01:00, 27.40it/s] 73%|███████▎  | 4589/6251 [01:44<00:54, 30.36it/s] 73%|███████▎  | 4593/6251 [01:45<02:01, 13.64it/s] 74%|███████▎  | 4602/6251 [01:45<01:31, 18.07it/s] 74%|███████▎  | 4605/6251 [01:46<02:01, 13.57it/s] 74%|███████▎  | 4608/6251 [01:47<03:23,  8.09it/s] 74%|███████▍  | 4616/6251 [01:47<02:04, 13.11it/s] 74%|███████▍  | 4620/6251 [01:47<01:53, 14.38it/s] 74%|███████▍  | 4625/6251 [01:47<01:29, 18.20it/s] 74%|███████▍  | 4631/6251 [01:47<01:22, 19.58it/s] 74%|███████▍  | 4638/6251 [01:47<01:04, 24.88it/s] 74%|███████▍  | 4642/6251 [01:48<02:11, 12.19it/s] 74%|███████▍  | 4645/6251 [01:49<03:16,  8.17it/s] 74%|███████▍  | 4647/6251 [01:50<04:33,  5.87it/s] 74%|███████▍  | 4649/6251 [01:51<05:08,  5.19it/s] 74%|███████▍  | 4651/6251 [01:51<05:29,  4.85it/s] 74%|███████▍  | 4652/6251 [01:51<05:27,  4.88it/s] 74%|███████▍  | 4653/6251 [01:51<05:13,  5.10it/s] 74%|███████▍  | 4654/6251 [01:52<05:41,  4.67it/s] 74%|███████▍  | 4655/6251 [01:52<06:11,  4.29it/s] 75%|███████▍  | 4659/6251 [01:52<03:12,  8.26it/s] 75%|███████▍  | 4662/6251 [01:53<03:07,  8.46it/s] 75%|███████▍  | 4669/6251 [01:53<01:37, 16.23it/s] 75%|███████▍  | 4672/6251 [01:53<01:41, 15.49it/s] 75%|███████▍  | 4676/6251 [01:53<01:24, 18.63it/s] 75%|███████▍  | 4679/6251 [01:54<02:53,  9.04it/s] 75%|███████▍  | 4681/6251 [01:55<04:34,  5.72it/s] 75%|███████▍  | 4683/6251 [01:55<05:22,  4.86it/s] 75%|███████▍  | 4685/6251 [01:56<06:29,  4.02it/s] 75%|███████▍  | 4686/6251 [01:56<07:05,  3.68it/s] 75%|███████▍  | 4687/6251 [01:57<07:00,  3.72it/s] 75%|███████▍  | 4688/6251 [01:57<07:41,  3.39it/s] 75%|███████▌  | 4689/6251 [01:58<08:54,  2.92it/s] 75%|███████▌  | 4696/6251 [01:58<03:01,  8.56it/s] 75%|███████▌  | 4700/6251 [01:58<02:33, 10.09it/s] 75%|███████▌  | 4708/6251 [01:58<01:27, 17.64it/s] 75%|███████▌  | 4712/6251 [01:58<01:20, 19.14it/s] 75%|███████▌  | 4716/6251 [01:59<01:21, 18.92it/s] 76%|███████▌  | 4725/6251 [01:59<00:51, 29.85it/s] 76%|███████▌  | 4730/6251 [01:59<00:50, 30.40it/s] 76%|███████▌  | 4739/6251 [01:59<00:49, 30.83it/s] 76%|███████▌  | 4743/6251 [02:00<01:51, 13.57it/s] 76%|███████▌  | 4749/6251 [02:00<01:25, 17.53it/s] 76%|███████▌  | 4754/6251 [02:00<01:11, 20.86it/s] 76%|███████▌  | 4758/6251 [02:00<01:11, 20.89it/s] 76%|███████▋  | 4768/6251 [02:01<00:45, 32.30it/s] 76%|███████▋  | 4774/6251 [02:01<01:10, 21.00it/s] 76%|███████▋  | 4781/6251 [02:01<01:08, 21.31it/s] 77%|███████▋  | 4788/6251 [02:01<00:54, 27.08it/s] 77%|███████▋  | 4793/6251 [02:02<00:55, 26.31it/s] 77%|███████▋  | 4797/6251 [02:02<01:00, 24.06it/s] 77%|███████▋  | 4804/6251 [02:02<00:46, 30.85it/s] 77%|███████▋  | 4809/6251 [02:04<02:51,  8.43it/s] 77%|███████▋  | 4813/6251 [02:04<02:44,  8.75it/s] 77%|███████▋  | 4817/6251 [02:04<02:12, 10.80it/s] 77%|███████▋  | 4823/6251 [02:04<01:34, 15.04it/s] 77%|███████▋  | 4828/6251 [02:05<01:15, 18.79it/s] 77%|███████▋  | 4832/6251 [02:05<02:21, 10.06it/s] 77%|███████▋  | 4838/6251 [02:06<01:40, 14.11it/s] 77%|███████▋  | 4842/6251 [02:06<01:25, 16.39it/s] 78%|███████▊  | 4848/6251 [02:06<01:03, 21.92it/s] 78%|███████▊  | 4853/6251 [02:06<00:56, 24.70it/s] 78%|███████▊  | 4858/6251 [02:06<00:52, 26.58it/s] 78%|███████▊  | 4862/6251 [02:06<00:47, 28.99it/s] 78%|███████▊  | 4869/6251 [02:06<00:48, 28.35it/s] 78%|███████▊  | 4876/6251 [02:07<00:48, 28.27it/s] 78%|███████▊  | 4880/6251 [02:07<00:52, 26.35it/s] 78%|███████▊  | 4886/6251 [02:07<00:43, 31.67it/s] 78%|███████▊  | 4894/6251 [02:07<00:33, 40.96it/s] 78%|███████▊  | 4899/6251 [02:08<00:56, 23.89it/s] 78%|███████▊  | 4903/6251 [02:08<00:52, 25.84it/s] 79%|███████▊  | 4910/6251 [02:08<00:40, 32.87it/s] 79%|███████▊  | 4917/6251 [02:08<00:34, 38.21it/s] 79%|███████▊  | 4922/6251 [02:08<00:47, 27.75it/s] 79%|███████▉  | 4929/6251 [02:08<00:37, 34.87it/s] 79%|███████▉  | 4934/6251 [02:09<00:39, 33.51it/s] 79%|███████▉  | 4941/6251 [02:09<00:41, 31.26it/s] 79%|███████▉  | 4948/6251 [02:09<00:41, 31.71it/s] 79%|███████▉  | 4952/6251 [02:09<00:42, 30.73it/s] 79%|███████▉  | 4958/6251 [02:09<00:44, 29.22it/s] 79%|███████▉  | 4962/6251 [02:10<01:10, 18.31it/s] 79%|███████▉  | 4968/6251 [02:10<00:59, 21.73it/s] 80%|███████▉  | 4973/6251 [02:10<00:49, 25.61it/s] 80%|███████▉  | 4978/6251 [02:10<00:42, 29.74it/s] 80%|███████▉  | 4983/6251 [02:10<00:39, 32.48it/s] 80%|███████▉  | 4988/6251 [02:10<00:35, 36.04it/s] 80%|███████▉  | 4997/6251 [02:11<00:25, 48.23it/s] 80%|████████  | 5007/6251 [02:11<00:20, 59.93it/s] 80%|████████  | 5014/6251 [02:11<00:20, 61.37it/s] 80%|████████  | 5021/6251 [02:11<00:22, 54.35it/s] 80%|████████  | 5027/6251 [02:11<00:25, 47.18it/s] 81%|████████  | 5033/6251 [02:11<00:29, 41.96it/s] 81%|████████  | 5041/6251 [02:11<00:25, 48.18it/s] 81%|████████  | 5049/6251 [02:12<00:21, 54.71it/s] 81%|████████  | 5055/6251 [02:12<00:46, 25.62it/s] 81%|████████  | 5060/6251 [02:13<01:00, 19.61it/s] 81%|████████  | 5064/6251 [02:13<01:02, 18.91it/s] 81%|████████  | 5071/6251 [02:13<00:57, 20.63it/s] 81%|████████  | 5077/6251 [02:13<00:47, 24.79it/s] 81%|████████▏ | 5081/6251 [02:14<01:16, 15.38it/s] 81%|████████▏ | 5090/6251 [02:14<00:49, 23.27it/s] 82%|████████▏ | 5095/6251 [02:15<01:11, 16.20it/s] 82%|████████▏ | 5099/6251 [02:15<01:02, 18.52it/s] 82%|████████▏ | 5104/6251 [02:15<01:07, 16.89it/s] 82%|████████▏ | 5107/6251 [02:15<01:30, 12.68it/s] 82%|████████▏ | 5110/6251 [02:16<01:23, 13.65it/s] 82%|████████▏ | 5118/6251 [02:16<00:58, 19.51it/s] 82%|████████▏ | 5125/6251 [02:16<00:54, 20.59it/s] 82%|████████▏ | 5132/6251 [02:16<00:47, 23.48it/s] 82%|████████▏ | 5135/6251 [02:16<00:46, 24.15it/s] 82%|████████▏ | 5142/6251 [02:17<00:40, 27.66it/s] 82%|████████▏ | 5147/6251 [02:17<00:35, 31.18it/s] 82%|████████▏ | 5153/6251 [02:17<00:44, 24.95it/s] 82%|████████▏ | 5157/6251 [02:18<01:47, 10.14it/s] 83%|████████▎ | 5160/6251 [02:19<02:42,  6.71it/s] 83%|████████▎ | 5162/6251 [02:20<03:01,  5.99it/s] 83%|████████▎ | 5164/6251 [02:20<03:34,  5.08it/s] 83%|████████▎ | 5165/6251 [02:21<03:33,  5.10it/s] 83%|████████▎ | 5166/6251 [02:21<03:46,  4.79it/s] 83%|████████▎ | 5167/6251 [02:21<04:24,  4.09it/s] 83%|████████▎ | 5168/6251 [02:22<05:04,  3.55it/s] 83%|████████▎ | 5169/6251 [02:22<05:16,  3.42it/s] 83%|████████▎ | 5170/6251 [02:23<05:36,  3.21it/s] 83%|████████▎ | 5171/6251 [02:23<05:55,  3.04it/s] 83%|████████▎ | 5172/6251 [02:23<06:25,  2.80it/s] 83%|████████▎ | 5173/6251 [02:24<06:31,  2.76it/s] 83%|████████▎ | 5180/6251 [02:24<02:17,  7.81it/s] 83%|████████▎ | 5187/6251 [02:24<01:28, 12.03it/s] 83%|████████▎ | 5194/6251 [02:24<00:58, 17.95it/s] 83%|████████▎ | 5197/6251 [02:25<01:01, 17.18it/s] 83%|████████▎ | 5201/6251 [02:25<00:54, 19.29it/s] 83%|████████▎ | 5205/6251 [02:25<01:02, 16.63it/s] 83%|████████▎ | 5212/6251 [02:25<00:54, 19.17it/s] 83%|████████▎ | 5219/6251 [02:26<00:43, 23.46it/s] 84%|████████▎ | 5227/6251 [02:26<00:35, 29.21it/s] 84%|████████▎ | 5231/6251 [02:26<01:03, 15.99it/s] 84%|████████▎ | 5234/6251 [02:28<02:02,  8.33it/s] 84%|████████▍ | 5236/6251 [02:28<02:10,  7.75it/s] 84%|████████▍ | 5238/6251 [02:28<02:37,  6.41it/s] 84%|████████▍ | 5248/6251 [02:29<01:29, 11.17it/s] 84%|████████▍ | 5250/6251 [02:29<01:46,  9.38it/s] 84%|████████▍ | 5257/6251 [02:29<01:12, 13.65it/s] 84%|████████▍ | 5264/6251 [02:30<00:58, 16.90it/s] 84%|████████▍ | 5271/6251 [02:30<00:52, 18.59it/s] 84%|████████▍ | 5274/6251 [02:32<02:22,  6.88it/s] 84%|████████▍ | 5281/6251 [02:32<01:34, 10.27it/s] 85%|████████▍ | 5285/6251 [02:32<01:44,  9.24it/s] 85%|████████▍ | 5288/6251 [02:33<02:01,  7.92it/s] 85%|████████▍ | 5292/6251 [02:33<01:34, 10.13it/s] 85%|████████▍ | 5295/6251 [02:35<02:59,  5.33it/s] 85%|████████▍ | 5299/6251 [02:35<02:12,  7.19it/s] 85%|████████▍ | 5304/6251 [02:35<01:32, 10.24it/s] 85%|████████▌ | 5315/6251 [02:35<01:00, 15.45it/s] 85%|████████▌ | 5323/6251 [02:35<00:53, 17.46it/s] 85%|████████▌ | 5328/6251 [02:36<00:44, 20.67it/s] 85%|████████▌ | 5332/6251 [02:36<00:52, 17.41it/s] 85%|████████▌ | 5342/6251 [02:36<00:33, 27.02it/s] 86%|████████▌ | 5347/6251 [02:37<01:10, 12.88it/s] 86%|████████▌ | 5351/6251 [02:38<01:43,  8.72it/s] 86%|████████▌ | 5354/6251 [02:39<02:05,  7.15it/s] 86%|████████▌ | 5356/6251 [02:40<02:30,  5.96it/s] 86%|████████▌ | 5358/6251 [02:40<02:29,  5.98it/s] 86%|████████▌ | 5360/6251 [02:40<02:33,  5.81it/s] 86%|████████▌ | 5361/6251 [02:40<02:25,  6.12it/s] 86%|████████▌ | 5362/6251 [02:40<02:18,  6.44it/s] 86%|████████▌ | 5363/6251 [02:41<02:31,  5.86it/s] 86%|████████▌ | 5364/6251 [02:41<03:18,  4.47it/s] 86%|████████▌ | 5365/6251 [02:41<02:59,  4.93it/s] 86%|████████▌ | 5366/6251 [02:41<03:04,  4.79it/s] 86%|████████▌ | 5375/6251 [02:42<00:52, 16.69it/s] 86%|████████▌ | 5378/6251 [02:43<02:12,  6.59it/s] 86%|████████▌ | 5383/6251 [02:43<01:27,  9.88it/s] 86%|████████▌ | 5386/6251 [02:43<01:28,  9.74it/s] 86%|████████▋ | 5393/6251 [02:43<01:01, 13.91it/s] 86%|████████▋ | 5400/6251 [02:44<00:48, 17.38it/s] 86%|████████▋ | 5405/6251 [02:44<00:41, 20.48it/s] 87%|████████▋ | 5411/6251 [02:44<00:43, 19.49it/s] 87%|████████▋ | 5414/6251 [02:45<01:20, 10.37it/s] 87%|████████▋ | 5421/6251 [02:45<00:53, 15.42it/s] 87%|████████▋ | 5425/6251 [02:46<01:08, 12.10it/s] 87%|████████▋ | 5428/6251 [02:46<01:06, 12.45it/s] 87%|████████▋ | 5438/6251 [02:46<00:44, 18.24it/s] 87%|████████▋ | 5441/6251 [02:47<01:12, 11.13it/s] 87%|████████▋ | 5443/6251 [02:48<01:45,  7.66it/s] 87%|████████▋ | 5445/6251 [02:48<02:14,  5.98it/s] 87%|████████▋ | 5453/6251 [02:49<01:12, 10.95it/s] 87%|████████▋ | 5457/6251 [02:49<01:00, 13.13it/s] 87%|████████▋ | 5462/6251 [02:49<00:52, 15.07it/s] 87%|████████▋ | 5469/6251 [02:49<00:41, 18.73it/s] 88%|████████▊ | 5477/6251 [02:49<00:36, 21.06it/s] 88%|████████▊ | 5487/6251 [02:50<00:24, 30.87it/s] 88%|████████▊ | 5492/6251 [02:51<01:03, 12.05it/s] 88%|████████▊ | 5496/6251 [02:51<01:07, 11.19it/s] 88%|████████▊ | 5504/6251 [02:51<00:50, 14.91it/s] 88%|████████▊ | 5511/6251 [02:52<00:37, 19.75it/s] 88%|████████▊ | 5516/6251 [02:52<00:48, 15.25it/s] 88%|████████▊ | 5520/6251 [02:52<00:47, 15.39it/s] 88%|████████▊ | 5526/6251 [02:53<00:41, 17.26it/s] 89%|████████▊ | 5533/6251 [02:53<00:35, 20.29it/s] 89%|████████▊ | 5541/6251 [02:53<00:26, 26.33it/s] 89%|████████▊ | 5547/6251 [02:53<00:22, 30.63it/s] 89%|████████▉ | 5552/6251 [02:55<01:12,  9.67it/s] 89%|████████▉ | 5561/6251 [02:55<00:47, 14.42it/s] 89%|████████▉ | 5570/6251 [02:55<00:33, 20.35it/s] 89%|████████▉ | 5576/6251 [02:55<00:28, 23.92it/s] 89%|████████▉ | 5582/6251 [02:55<00:25, 26.26it/s] 89%|████████▉ | 5587/6251 [02:55<00:24, 26.79it/s] 90%|████████▉ | 5596/6251 [02:56<00:17, 36.56it/s] 90%|████████▉ | 5607/6251 [02:56<00:13, 48.01it/s] 90%|████████▉ | 5614/6251 [02:56<00:19, 33.51it/s] 90%|████████▉ | 5620/6251 [02:57<00:42, 15.00it/s] 90%|████████▉ | 5624/6251 [02:57<00:44, 14.24it/s] 90%|█████████ | 5630/6251 [02:58<00:34, 17.83it/s] 90%|█████████ | 5638/6251 [02:58<00:24, 24.62it/s] 90%|█████████ | 5644/6251 [02:58<00:23, 26.24it/s] 90%|█████████ | 5649/6251 [02:58<00:20, 29.08it/s] 90%|█████████ | 5654/6251 [02:58<00:21, 27.25it/s] 91%|█████████ | 5658/6251 [02:58<00:25, 23.49it/s] 91%|█████████ | 5670/6251 [02:59<00:16, 34.33it/s] 91%|█████████ | 5676/6251 [02:59<00:14, 38.58it/s] 91%|█████████ | 5681/6251 [03:00<00:48, 11.74it/s] 91%|█████████ | 5698/6251 [03:00<00:24, 23.04it/s] 91%|█████████▏| 5705/6251 [03:00<00:20, 26.52it/s] 91%|█████████▏| 5712/6251 [03:01<00:20, 26.90it/s]
